@@ -1,29 +1,12 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pizza House</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header>
-<h1>🍕 Pizza House</h1>
-<p>Найсмачніша піца у місті</p>
-</header>
-<nav>
-<a href="#menu">Меню</a>
-<a href="#about">Про нас</a>
-<a href="#contact">Контакти</a>
-</nav>
-<section id="menu">
-<h2>Популярні піци</h2>
-<div class="card">Маргарита</div>
-<div class="card">Пепероні</div>
-<div class="card">4 Сири</div>
-</section>
-<section id="about"><h2>Про нас</h2><p>Свіжі інгредієнти та швидка доставка.</p></section>
-<section id="contact"><h2>Контакти</h2><button onclick="orderPizza()">Замовити</button></section>
-<script src="js/script.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="uk"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ultimate Pizza</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header><h1>🍕 Ultimate Pizza</h1></header>
+<nav><a href="#menu">Меню</a><a href="#gallery">Галерея</a><a href="#register">Реєстрація</a><a href="#cart">Кошик</a></nav>
+<section id="hero"><h2>Замовляй онлайн</h2></section>
+<section id="menu"><h2>Меню</h2><div id="products"></div></section>
+<section id="gallery"><h2>Галерея</h2><img src="https://picsum.photos/400/250" width="300"></section>
+<section id="register"><h2>Реєстрація</h2><input id="user" placeholder="Логін"><button onclick="register()">Зареєструватися</button></section>
+<section id="cart"><h2>Кошик</h2><ul id="cartList"></ul></section>
+<script src="app.js"></script></body></html>
