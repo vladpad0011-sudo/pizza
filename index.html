@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pizza</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1 id="siteTitle">PIZZA</h1>
+      <div class="sub">Смачні піци • швидке замовлення</div>
+    </div>
+
+    <div class="actions">
+      <select id="themeSelect" title="Тема">
+        <option value="light">Світла</option>
+        <option value="dark">Темна</option>
+        <option value="xmas">Новорічна ❄️</option>
+      </select>
+
+      <button id="openCartBtn" class="btn">
+        🛒 Кошик <span id="count">0</span>
+      </button>
+
+      <a class="btn ghost" href="./Акаунт.html">Вхід</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="menu" class="grid"></div>
+  </main>
+
+  <div id="toast" class="toast">✅ Додано в кошик</div>
+
+  <div id="cartModal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <b>Кошик</b>
+        <button id="closeCartBtn" class="btn ghost">✖</button>
+      </div>
+
+      <div id="cartList" class="cart-list"></div>
+      <div id="total" class="total">Разом: 0 грн</div>
+
+      <div class="modal-actions">
+        <button id="goOrderBtn" class="btn">Оформити</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <b>Оформлення замовлення</b>
+        <button id="closeOrderBtn" class="btn ghost">✖</button>
+      </div>
+
+      <div class="form">
+        <input id="cName" placeholder="Імʼя" />
+        <input id="cSurname" placeholder="Прізвище" />
+        <input id="cPhone" placeholder="Телефон" />
+        <input id="cAddress" placeholder="Адреса" />
+        <select id="pay">
+          <option value="">Оплата</option>
+          <option value="cash">Готівка</option>
+          <option value="card">Картка</option>
+        </select>
+      </div>
+
+      <div class="modal-actions">
+        <button id="sendOrderBtn" class="btn">✅ Надіслати замовлення</button>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="snow" class="snow hidden"></canvas>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
